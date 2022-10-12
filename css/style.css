@@ -52,7 +52,6 @@ body .header .navbar .logo p span {
   background: -webkit-gradient(linear, right top, left top, from(#8EE901), color-stop(99.06%, #4F9C2C));
   background: linear-gradient(270deg, #8EE901 0%, #4F9C2C 99.06%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 body .header .navbar ul {
