@@ -1107,20 +1107,30 @@ body .footer .footer-card {
   height: 72px;
 }
 body .footer .footer-card .footer-navbar {
-  width: 80%;
+  width: 100%;
   height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  background-color: #515668;
+}
+body .footer .footer-card .footer-navbar .footer-card-2 {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 30px;
 }
-body .footer .footer-card .footer-navbar .card-logo {
+body .footer .footer-card .footer-navbar .footer-card-2 .card-logo {
   width: 17%;
   height: 40px;
   display: -webkit-box;
@@ -1131,14 +1141,14 @@ body .footer .footer-card .footer-navbar .card-logo {
           justify-content: space-between;
   cursor: pointer;
 }
-body .footer .footer-card .footer-navbar .card-logo .card-sect p {
+body .footer .footer-card .footer-navbar .footer-card-2 .card-logo .card-sect p {
   font-family: "Ubuntu";
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #8EE901;
 }
-body .footer .footer-card .footer-navbar .card-logo .card-sect span {
+body .footer .footer-card .footer-navbar .footer-card-2 .card-logo .card-sect span {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
@@ -1146,14 +1156,14 @@ body .footer .footer-card .footer-navbar .card-logo .card-sect span {
   line-height: 20px;
   color: #fff;
 }
-body .footer .footer-card .footer-navbar .card-input {
+body .footer .footer-card .footer-navbar .footer-card-2 .card-input {
   width: 475px;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-body .footer .footer-card .footer-navbar .card-input input {
+body .footer .footer-card .footer-navbar .footer-card-2 .card-input input {
   width: 290px;
   height: 40px;
   font-family: "Ubuntu";
@@ -1163,7 +1173,7 @@ body .footer .footer-card .footer-navbar .card-input input {
   color: #75758A;
   padding-left: 20px;
 }
-body .footer .footer-card .footer-navbar .card-input button {
+body .footer .footer-card .footer-navbar .footer-card-2 .card-input button {
   width: 160px;
   height: 40px;
   background: #4F9C2C;
@@ -1177,7 +1187,7 @@ body .footer .footer-card .footer-navbar .card-input button {
   color: #FFFFFF;
   cursor: pointer;
 }
-body .footer .footer-card .footer-navbar .card-zakaz {
+body .footer .footer-card .footer-navbar .footer-card-2 .card-zakaz {
   width: 13%;
   height: 40px;
   display: -webkit-box;
@@ -1191,7 +1201,7 @@ body .footer .footer-card .footer-navbar .card-zakaz {
           align-items: center;
   cursor: pointer;
 }
-body .footer .footer-card .footer-navbar .card-zakaz span {
+body .footer .footer-card .footer-navbar .footer-card-2 .card-zakaz span {
   font-family: "Ubuntu";
   font-weight: 700;
   font-size: 16px;
