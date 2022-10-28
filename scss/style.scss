@@ -11,8 +11,6 @@
 
 
 body {
-
-    // background-color: rgb(64, 64, 64);
     .container {
         width: 100%;
         margin: 0 auto;
@@ -30,6 +28,9 @@ body {
             justify-content: space-between;
             align-items: center;
 
+            .logo-2{
+                display: none;
+            }
             .logo {
                 p {
                     font-family: 'Montserrat';
@@ -56,7 +57,6 @@ body {
                 width: 40%;
                 display: flex;
                 justify-content: space-between;
-
                 li {
                     list-style: none;
 
@@ -72,7 +72,7 @@ body {
                         &:hover {
                             color: #60B021;
                             transition: all 1s ease-in-out;
-                            border-bottom: 1px solid #4F9C2C;
+                            border-bottom: 3px solid #4F9C2C;
                             padding-bottom: 20px;
                         }
                     }
@@ -124,6 +124,7 @@ body {
                         .icon {
                             i:hover {
                                 color: #4F9C2C;
+                                cursor: pointer;
                             }
                         }
                     }
@@ -140,6 +141,9 @@ body {
                         border-right: 2px solid #000;
                         display: flex;
                         justify-content: center;
+                        &:hover{
+                            cursor: pointer;
+                        }
                     }
 
                     .card-2 {
@@ -147,6 +151,7 @@ body {
                         justify-content: center;
                         width: 100px;
                         border-right: 2px solid #000000;
+                        cursor: pointer;
                     }
                 }
             }
@@ -1166,6 +1171,55 @@ body {
                 width: 90%;
                 display: flex;
                 justify-content: flex-end;
+            }
+        }
+    }
+
+    // MEDIA
+
+    @media all and(max-width: 380px) {
+        .header{
+            .navbar{
+                ul{
+                    display: none;
+                }
+                .logo-2{
+                    display: block;
+                    font-family: 'Montserrat';
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #000000;
+                    span{
+                        font-family: 'Montserrat';
+                        font-weight: 800;
+                        font-size: 18px;
+                        line-height: 26px;
+                        text-align: right;
+                        background: linear-gradient(270deg, #8EE901 0%, #4F9C2C 99.06%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                    }
+                }
+
+                .logo{
+                    display: none;
+                }
+
+                .icon-section{
+                    width: 70%;
+
+                    .logo-icons{
+                        gap: 10px;
+                        .card-1{
+                            border: 0;
+                        }
+                        .card-2{
+                            border: 0;
+                        }
+                    }
+                }
             }
         }
     }

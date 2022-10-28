@@ -37,6 +37,9 @@ body .header .navbar {
       -ms-flex-align: center;
           align-items: center;
 }
+body .header .navbar .logo-2 {
+  display: none;
+}
 body .header .navbar .logo p {
   font-family: "Montserrat";
   font-weight: 800;
@@ -80,7 +83,7 @@ body .header .navbar ul li a:hover {
   color: #60B021;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  border-bottom: 1px solid #4F9C2C;
+  border-bottom: 3px solid #4F9C2C;
   padding-bottom: 20px;
 }
 body .header .navbar .icon-section {
@@ -134,6 +137,7 @@ body .header .navbar .icon-section .logo-icon .icon-sect .nomber-1:first-child {
 }
 body .header .navbar .icon-section .logo-icon .icon-sect .icon i:hover {
   color: #4F9C2C;
+  cursor: pointer;
 }
 body .header .navbar .icon-section .logo-icons {
   width: 30%;
@@ -155,6 +159,9 @@ body .header .navbar .icon-section .logo-icons .card-1 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+body .header .navbar .icon-section .logo-icons .card-1:hover {
+  cursor: pointer;
+}
 body .header .navbar .icon-section .logo-icons .card-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,6 +171,7 @@ body .header .navbar .icon-section .logo-icons .card-2 {
           justify-content: center;
   width: 100px;
   border-right: 2px solid #000000;
+  cursor: pointer;
 }
 body .section-1 {
   width: 100%;
@@ -1306,4 +1314,44 @@ body .footer .footer-card .footer-logo {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+@media all and (max-width: 380px) {
+  body .header .navbar ul {
+    display: none;
+  }
+  body .header .navbar .logo-2 {
+    display: block;
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+  }
+  body .header .navbar .logo-2 span {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: right;
+    background: -webkit-gradient(linear, right top, left top, from(#8EE901), color-stop(99.06%, #4F9C2C));
+    background: linear-gradient(270deg, #8EE901 0%, #4F9C2C 99.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  body .header .navbar .logo {
+    display: none;
+  }
+  body .header .navbar .icon-section {
+    width: 70%;
+  }
+  body .header .navbar .icon-section .logo-icons {
+    gap: 10px;
+  }
+  body .header .navbar .icon-section .logo-icons .card-1 {
+    border: 0;
+  }
+  body .header .navbar .icon-section .logo-icons .card-2 {
+    border: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
