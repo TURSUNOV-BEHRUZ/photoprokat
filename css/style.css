@@ -43,14 +43,14 @@ body .header .navbar .logo-2 {
 body .header .navbar .logo p {
   font-family: "Montserrat";
   font-weight: 800;
-  font-size: 21px;
+  font-size: 30px;
   line-height: 26px;
   color: #000000;
 }
 body .header .navbar .logo p span {
   font-family: "Montserrat";
   font-weight: 800;
-  font-size: 21px;
+  font-size: 30px;
   line-height: 26px;
   background: -webkit-gradient(linear, right top, left top, from(#8EE901), color-stop(99.06%, #4F9C2C));
   background: linear-gradient(270deg, #8EE901 0%, #4F9C2C 99.06%);
@@ -394,6 +394,7 @@ body .section-2 .section-card .card-2 .button-section button {
           align-items: center;
   color: #fff;
   border: 0;
+  cursor: pointer;
 }
 body .section-2 .section-card .card-2 .button-section button img {
   width: 20px;
@@ -404,6 +405,12 @@ body .section-2 .section-card .card-2 .button-section button:nth-child(1) {
   color: black;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+body .section-2 .section-card .card-2 .button-section button:hover {
+  background-color: red;
+  color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 body .section-3 {
   width: 50%;
